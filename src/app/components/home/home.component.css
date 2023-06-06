@@ -1,0 +1,13 @@
+.bloco {
+    width: 100%;
+    min-height: calc(100% - 70px);
+    display: flex;
+    background: #363636;
+}
+
+.bloco img {
+    max-width: 100%;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+}

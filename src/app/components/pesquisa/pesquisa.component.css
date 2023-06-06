@@ -1,0 +1,52 @@
+.bloco {
+    width: 100%;
+    min-height: calc(100% - 70px);
+    display: flex;
+    background: #363636;
+}
+
+.pai {
+    max-width: 600px;
+}
+
+.filho {
+    max-width: 550px;
+    background: rgba(244, 253, 253, 0.801);
+    padding: 30px;
+    margin-top: 10px;
+    border-radius: 15px;
+    text-align: justify;
+}
+
+.btn {
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Latoo';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh7USSwiPGQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+h2, p {
+    font-family: 'Lato';
+}
+
+label {
+    font-family: 'Latoo';
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}

@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+<div class="bloco">
+
+    
+    <div class="container pai">
+
+        <div class="container filho">
+            <h5>Olá, somos um grupo de alunos de SI e precisamos de você.</h5>
+            <p></p>
+            <p>Estamos fundando uma empresa junior e queremos algumas opiniões dos alunos aqui do núcleo.</p>
+            <p>Criamos um pequeno formulário de 5 perguntas para isso, não leva nem 3 minutos para responder todas.</p>
+            <p>Desde já, agradecemos pela sua atenção.</p>
+        </div>
+
+        <div class="container filho">
+            <form class="form" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label>Seu nome: *</label>
+                    <input type="text" placeholder="Nome" required class="form-control" name="Nome" [(ngModel)]="pesquisa.nome">
+                </div>
+                <div class="form-group">
+                    <label>Você possui interesse em ser membro voluntário? *</label>
+                    <input type="text" placeholder="Sim ou Não" required class="form-control" name="Voluntario" [(ngModel)]="pesquisa.voluntario">
+                </div>
+                <div class="form-group">
+                    <label>Caso responda sim para a pergunta anterior, quais são suas skills?</label>
+                    <input type="text" placeholder="Springboot, Angular, Java, C++ ..." class="form-control" name="Skills" [(ngModel)]="pesquisa.skills">
+                </div>
+                <div class="form-group">
+                    <label>Na sua opinião, que serviço seria essencial que uma empresa de tecnologia ofertasse?</label>
+                    <input type="text" placeholder="Desenvolvimento de sites, aplicativos..." class="form-control" name="Servicos" [(ngModel)]="pesquisa.servicos">
+                </div>
+                <div class="form-group">
+                    <label>Se a empresa fosse sua, que nome daria para ela? *</label>
+                    <input type="text" placeholder="SpaceX" required class="form-control" name="Empresa" [(ngModel)]="pesquisa.empresa">
+                </div>
+                <div class="form-group">
+                    <label>Telefone para contato: *</label>
+                    <input type="tel" maxlength="11"  required class="form-control" onkeypress="$(this).mask('(00) 0 0000-0000')" placeholder="(00) 0 0000-0000" name="Contato" [(ngModel)]="pesquisa.contato">
+                </div>
+                <div class="form-group">
+                    <a id="btnEntrar" class="btn btn-secondary" target="_blank" type="submit" value="Submit" (click)="onSubmit()">Enviar</a>
+                </div>      
+            </form>
+        </div>
+    </div>    
+</div>
+
+
