@@ -18,16 +18,20 @@ export class LoadComponent implements OnInit {
     }, 3000);
   }
 
-  mudarImg(){
-    var element = document.getElementById("butao");
-    element!.style.visibility="hidden";
-    var img = document.getElementById("img_efeito");
-    img!.setAttribute('src', '../../../assets/hackeado.gif');
-    navigator.vibrate([500,200,800,200,800,200,500]);
-    setTimeout(() => {
+  mudarImg() {
+    if (window.navigator && window.navigator.vibrate) {
+      var element = document.getElementById("butao");
+      element!.style.visibility = "hidden";
+      var img = document.getElementById("img_efeito");
+      img!.setAttribute('src', '../../../assets/hackeado.gif');
+      navigator.vibrate([500, 200, 800, 200, 800, 200, 500]);
+      setTimeout(() => {
+        this.router.navigate(['pesquisa']);
+        console.log("Vibrando");
+      }, 5000);
+    } else {
       this.router.navigate(['pesquisa']);
-      console.log("Vibrando");
-    }, 5000);
+    }
   }
 
 }
