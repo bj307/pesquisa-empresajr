@@ -1,0 +1,55 @@
+.bloco {
+    width: 100%;
+    min-height: calc(100% - 70px);
+    display: flex;
+    background: #363636;
+}
+
+img {
+    max-width: 30%;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 100px;
+    letter-spacing: 3px;
+    color: #eff2f8;
+    margin: 0;
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+.bloco2 {
+    max-width: 550px;
+    margin: 0 auto;
+    max-height: 350px;
+    border-radius: 15px;
+    height: initial;
+    margin-top: 50px;
+    box-shadow: 4px 8px 40px 8px rgba(88, 146, 255, 0.2);
+}
+
+@media (max-width:799px) {
+    img {
+        max-width: 70%;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+    .bloco2 {
+        margin-left: 5px;
+        margin-right: 5px;
+        min-width: auto;
+    }
+}
+
+.container {
+    text-align: center;
+}
+
