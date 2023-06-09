@@ -3,6 +3,7 @@ import { PesquisaService } from './pesquisa.service';
 import { PesquisaDataService } from './pesquisa-data.service';
 import { Pesquisa } from './pesquisa';
 import { data } from 'jquery';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pesquisa',
@@ -14,7 +15,7 @@ export class PesquisaComponent implements OnInit {
   pesquisa!: Pesquisa;
   key: string = '';
 
-  constructor(private _pesquisaService: PesquisaService, private _pesquisaDataService: PesquisaDataService) {
+  constructor(private _pesquisaService: PesquisaService, private _pesquisaDataService: PesquisaDataService, private router:Router) {
 
   }
 
@@ -37,6 +38,7 @@ export class PesquisaComponent implements OnInit {
     this._pesquisaService.insert(this.pesquisa);
     this.pesquisa = new Pesquisa();
     this.key = '';
+    this.router.navigate(['obrigado']);
   }
 }
 

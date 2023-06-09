@@ -26,7 +26,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     NavbarComponent,
     PesquisaComponent,
-    LoadComponent
+    LoadComponent,
+    TyPageComponent
   ],
   imports: [
     BrowserModule,
@@ -44,4 +45,5 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   bootstrap: [AppComponent]
 })
 export class AppModule { }import { environment } from 'src/environments/environment';
+import { TyPageComponent } from './components/ty-page/ty-page.component';
 
