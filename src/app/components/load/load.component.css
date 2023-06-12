@@ -24,3 +24,7 @@
 .fundo #butao{
     color: white;
 }
+
+#butao {
+  font-size: 24px;
+}
